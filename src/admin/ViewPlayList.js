@@ -4,7 +4,7 @@ import config from '../config';
 import { Route, Routes, useNavigate, useParams } from 'react-router-dom';
 import './Admin.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay, faPause, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import PlaySong from './PlaySong';
 
 export default function ViewPlayList() {
@@ -37,7 +37,7 @@ export default function ViewPlayList() {
 
   useEffect(() => {
     const fetchSongDurations = async () => {
-      const durations = {};
+      // const durations = {};
       for (const song of albumData) {
         try {
           const audio = new Audio(`${config.url}/songaudio/${song.file}`);

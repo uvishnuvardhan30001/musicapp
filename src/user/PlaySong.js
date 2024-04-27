@@ -35,7 +35,6 @@ export default function PlaySong() {
     useEffect(() => {
         // Play the first song automatically when component mounts
         if (songs.length > 0) {
-            playAudio(0);
         }
     }, [songs]);
 

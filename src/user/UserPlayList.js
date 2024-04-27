@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import './UserHome.css'
-import { Route, Routes, useNavigate, useParams } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay, faPause, faHeart } from '@fortawesome/free-solid-svg-icons';
+import {  faHeart } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
 import config from '../config';
 import PlaySong from './PlaySong'
 
 export default function UserPlayList() {
   const [albumData, setAlbumData] = useState([]);
-  const [albimg, setAlbimg] = useState(null);
+  const [ setAlbimg] = useState(null);
   const [songDurations, setSongDurations] = useState({});
   // const [currentSongIndex, setCurrentSongIndex] = useState(null);
   // const [isPlaying, setIsPlaying] = useState(false);
@@ -33,11 +33,11 @@ export default function UserPlayList() {
    
       fetchSongsData();
     
-  }, []);
+  });
 
   useEffect(() => {
     const fetchSongDurations = async () => {
-      const durations = {};
+      // const durations = {};
       for (const song of albumData) {
         try {
           const audio = new Audio(`${config.url}/songaudio/${song.file}`);

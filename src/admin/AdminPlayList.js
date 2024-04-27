@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './Admin.css'
-import CreateAlbum from './AddAlbum'
+// import CreateAlbum from './AddAlbum'
 import { Route, Routes, Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import config from '../config';
-import ViewAlbum from './ViewAlbum';
 import AddSongs from './AddSongs';
 import CreatePlayList from './CreatePlayLists';
 import ViewPlayList from './ViewPlayList';
