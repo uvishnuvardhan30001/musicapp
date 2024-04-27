@@ -1,0 +1,56 @@
+.acard {
+    box-shadow: 0 4px 8px 0 rgba(255, 251, 0, 0.941);
+    max-width: 560px;
+    max-height: 300px;
+    margin:auto;
+    text-align: center;
+    text-size-adjust: auto;
+    font-family: arial;
+    border: 3px solid rgb(255, 255, 255); /* Add a 1px solid border with a light gray color */
+    padding: 40px; /* Add some padding to the card content */
+  }
+  artist{
+    height: 380px;
+    width: 380px;
+    margin-top: 0px;
+    border-radius: 15px;
+  }
+  .art{
+    padding-right: 110px;
+  }
+  .thdemo
+  {
+    size: 20px;
+  }
+  /* .home {
+    background: linear-gradient(to bottom right, #ff002f, #d9ff00);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.8;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    width: 100px;
+  } */
+.home:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+.home:not([disabled]):hover:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  h3{
+    text-size-adjust: auto;
+  }
