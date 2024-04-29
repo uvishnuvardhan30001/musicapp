@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import config from '../config';
 import './PlaySong.css'
-// import './playsong.css';
 
 export default function PlaySong() {
     const { songname } = useParams();
