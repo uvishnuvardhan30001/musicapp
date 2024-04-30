@@ -61,7 +61,7 @@ export default function AdminAlbums() {
                {
 
         
-          <div className="card">
+          <div className="card"><br/>
     <img src={`${config.url}/albumimage/${event.file}`} alt={event.name} width="50%" className='imgcd' />
  
         <h4>{event.name}</h4>
